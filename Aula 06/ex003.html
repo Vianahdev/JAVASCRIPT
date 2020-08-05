@@ -16,21 +16,26 @@
     <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, ea. Debitis laudantium repudiandae quas eum id asperiores exercitationem rerum quae et! Consequuntur corporis accusantium aliquid id accusamus delectus iste ipsum!
     </p>
-
-
-    <form action="">
-        <Label>Valor</Label>
-        <input type="text" >
-    </form>
-        
+   
     <script>
        
-        var v_nome; 
+        var v_nome;
+        var v_salario;
+        var v_valorf
         
-        v_nome = window.prompt('Qual e o seu nome?');
-        document.write(`Olá, ${v_nome} seu nome tem ${v_nome.length} letras`)
-        document.write(`Seu nome em maiusculo e ${v_nome.toUpperCase()}`)
-        document.write(`Seu nome em minusculo e ${v_nome.toLowerCase()}`)
+        v_nome = String(window.prompt('Qual e o seu nome?'));
+        v_salario = Number(window.prompt('Digite seu salario'));
+
+        if (v_salario > 1499,99){   
+            v_valorf = (v_salario * 1.15);
+        }else {
+            v_valorf = (v_salario * 1.02);
+        }
+
+
+        document.write(`Olá, ${v_nome} seu nome tem ${v_nome.length} letras, e você recebe ${v_salario}`);
+
+        document.write(`Seu salario final e de : ${v_valorf.toLocaleString('pt-BR', {style: 'currency', currency:'EUR'})}`);
         
     </script>
 </body>
