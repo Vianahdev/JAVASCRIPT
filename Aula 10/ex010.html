@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Detran</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #container{
+            width: 450px;
+            height: 450px;
+            margin: 15px auto;
+            padding: 15px;
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div id="container">
+
+        <h1>Velocimetro</h1>
+        Velocidade do Carro: <input type="number" name="txt1" id="txt1"/> Km/h
+        <button type="button" name="btn1" id="btn1" onclick='velocidade()'>Calcular</button>
+        <div id="res">
+
+        </div>
+        
+    </div>
+
+    <script>
+
+        function velocidade() {
+            var vel = Number(window.document.getElementById('txt1').value)
+            var res = window.document.querySelector('div#res')
+            
+            res.innerHTML = `Sua velocidade atual e de <strong>${vel} Km/h</strong>`
+
+            if(vel > 60.5){
+                res.innerHTML += `<p>Sua velocidade e de <strong>${vel} Km/h</strong>, está acima do limite permitido na via, Multado</p>`
+            }
+              
+            
+        }
+
+
+    </script>
+    
+</body>
+</html>

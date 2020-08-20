@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <h1>Nacionalidade</h1>
+        Qual o pais que nasceu: <input type="text" name="txt1" id="txt1">
+        <button value="button" name="btn1" id="btn1" onclick='analisa()'>Verificar</button><br>
+        <div id="res">Sua Nacionalidade e:</div>
+
+        <script>
+             function analisa(){
+                var nac = window.document.querySelector('input#txt1').value
+                var res = window.document.querySelector('div#res')
+
+                console.log(`${nac}`)
+
+                if (nac === 'Brasil'){
+                    res.innerHTML += `<strong>Brasileira</strong>`
+                }else{
+                    res.innerHTML += `<strong>Estrangeira</strong>`
+                }
+             }
+
+        </script>
+    </body>
+</html>
