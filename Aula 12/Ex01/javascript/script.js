@@ -4,10 +4,8 @@ var msg = window.document.getElementById('msg')
 var img = window.document.getElementById('imagem')
 
 var periodo = new Date()
-//var hora = periodo.getHours()
+var hora = periodo.getHours()
 var min = periodo.getMinutes()
-
-hora = 19
 
 msg.innerHTML = `Agora São exatamente ${hora}H ${min}Min `
 
