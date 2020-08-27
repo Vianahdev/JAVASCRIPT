@@ -15,6 +15,32 @@ header{
     text-align: center;
 }
 
+/*
+Ajuste no Radio Buttom
+*/
+.radio-buttom{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.radio-buttom:after{
+    content: "";
+    clear: both;
+}
+
+.radio-select{
+    float: left;
+    position: relative;
+}
+
+.radio-buttom,.radio-select{
+    margin-left: 25px;
+}
+
+
+
+
 img{
     border-radius: 200px;
 }
