@@ -3,11 +3,12 @@ function carregar(){
 var msg = window.document.getElementById('msg')
 var img = window.document.getElementById('imagem')
 
+
 var periodo = new Date()
 var hora = periodo.getHours()
 var min = periodo.getMinutes()
 
-msg.innerHTML = `Agora São exatamente ${hora}H ${min}Min `
+msg.innerHTML = `Agora São exatamente ${hora}H ${min}Min`
 
 if(hora <=12){
     img.src = 'imagem/dia.jpg'
