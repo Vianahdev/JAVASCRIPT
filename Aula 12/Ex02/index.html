@@ -16,26 +16,23 @@
         <section>
 
             <div id="conteudo" >
+   
+                    <p>Digite seu ano de Nascimento:
+                    <input type="text" name="txtnasc" id="txtnasc">
+                    </p>
 
-                <form action="">.
-
-                    <label for="">Digite sua Idade:</label>
-                    <input type="text" name="" id="txtidade">
-
-                    <ul class="radio-buttom">
-                        <li class="radio-select">
-                            <input type="radio" name="masc" id="masc">
-                            <label for="masc">Masculino</label>
+                    <p>Sexo:
+                        <input type="radio" name="radmasc" id="masc">
+                        <label for="masc">Masculino</label>
                             
-                        </li>
-
-                        <li class="radio-select"> 
-                            <input type="radio" name="fem" id="fem">
-                            <label for="fem">Feminino</label>
-                        </li>
-                    </ul>
-    
-                </form> 
+                        <input type="radio" name="radfem" id="fem">
+                        <label for="fem">Feminino</label>
+                    </p> 
+                    
+                    <p>
+                        <button type="button" name="btnverifica" id="btnverifica" onclick="verificar()">Verificar</button>
+                    </p>
+                
             </div>
 
             <div id="foto">
@@ -43,7 +40,7 @@
             </div>
 
             <div id="msg" >
-                Mensagem
+                Preencha os dados acima para verificar o resultado!
             </div>
 
         </section>

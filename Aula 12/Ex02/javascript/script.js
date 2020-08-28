@@ -1,1 +1,3 @@
-var 
+function verificar(){
+    
+}

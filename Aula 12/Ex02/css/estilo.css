@@ -5,6 +5,7 @@
 
 body{
     background: rgb(36, 101, 187);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 header{
@@ -15,31 +16,13 @@ header{
     text-align: center;
 }
 
-/*
-Ajuste no Radio Buttom
-*/
-.radio-buttom{
-    list-style: none;
-    margin: 0;
-    padding: 0;
+p{
+    margin-bottom: 10px;
 }
 
-.radio-buttom:after{
-    content: "";
-    clear: both;
+#foto,#msg{
+    text-align: center;
 }
-
-.radio-select{
-    float: left;
-    position: relative;
-}
-
-.radio-buttom,.radio-select{
-    margin-left: 25px;
-}
-
-
-
 
 img{
     border-radius: 200px;
@@ -52,7 +35,6 @@ section{
     width: 500px;
     margin: 10px auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.315);
-    text-align: center;
 }
 
 footer{
