@@ -20,8 +20,9 @@ p{
     margin-bottom: 10px;
 }
 
-#foto,#msg{
+#msg,#img{
     text-align: center;
+    margin-bottom: 5px;
 }
 
 img{
