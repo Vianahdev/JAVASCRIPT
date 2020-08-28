@@ -3,7 +3,6 @@ function carregar(){
 var msg = window.document.getElementById('msg')
 var img = window.document.getElementById('imagem')
 
-
 var periodo = new Date()
 var hora = periodo.getHours()
 var min = periodo.getMinutes()
