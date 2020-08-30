@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body{
+    background: rgba(135, 42, 223, 0.801);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer{
+    padding: 10px;
+    width: 500px;
+    margin: 10px auto;
+    color: white;
+    text-align: center;
+    clear: both;
+}
+
+#titulo{
+    color: white;
+    text-align: center;
+    line-height: 100px;
+
+}
+
+#caixa{
+    width: 350px;
+    height: 405px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 15px;
+    padding: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.315);
+}
+
+input{
+    padding: 0px;
+}
