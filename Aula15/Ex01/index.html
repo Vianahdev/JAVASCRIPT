@@ -13,18 +13,28 @@
 
         <header>
             <div id="topo">
-                <h1>Titulo</h1>
+                <h1>Vamos Contar</h1>
             </div>
         </header>
 
         <section>
             <div class="caixa">
-                <div>
-                    Conteudo 01
-                </div>                
 
-                <div>
-                    Conteudo 02
+                <div id="conteudo">
+                    <form action="" name="form" id="form">
+                        <label for="txtini">Digite o Inicio:</label>
+                        <input type="number" name="txtini" id="txtini">
+                        <label for="txtfim">Digite o Fim:</label>
+                        <input type="number" name="txtfim" id="txtfim">
+                        <label for="txtpas">Digite os Passos:</label>
+                        <input type="number" name="txtpas" id="txtpas">
+
+                        <input type="button" value="Calcular" name="btncalc" id="btncalc" onclick="contar()">
+                    </form>
+                </div>
+
+                <div id="resultado">
+                    Preparando a Contagem...
                 </div>
             </div>
         </section>
