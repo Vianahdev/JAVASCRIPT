@@ -14,7 +14,7 @@ function calcula() {
 
         var percent = 0.015
 
-        if (ano < 2011) {
+        if (ano < 2012) {
             var salfim = sal * percent + sal
             msg.innerHTML = `Seu salario final e de : ${salfim.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'})}`
         }else{
