@@ -10,14 +10,14 @@ var min = periodo.getMinutes()
 msg.innerHTML = `Agora São exatamente ${hora}H ${min}Min`
 
 if(hora <=12){
-    img.src = 'imagem/dia.jpg'
+    img.src = 'images/dia.jpg'
     document.body.style.background = '#e2cd9f'
     
 }else if(hora <= 18){
-    img.src = 'imagem/tarde.jpg'
+    img.src = 'images/tarde.jpg'
     document.body.style.background = '#b9846f'
 }else{
-    img.src = 'imagem/noite.jpg'
+    img.src = 'images/noite.jpg'
     document.body.style.background = '#515154'
 }
 }
