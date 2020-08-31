@@ -13,7 +13,7 @@
 
         <header>
             <div id="topo">
-                <h1>Soma de Numero Par</h1>
+                <h1>Soma de Numero</h1>
             </div>
         </header>
 
@@ -21,11 +21,16 @@
             <div class="caixa">
                 <div id="conteudo">
                     
-                    
+                    <form action=""> 
+                    <label for="txtnum">Digite um Numero:</label>
+                    <input type="number" name="txtnum" id="txtnum">   
+
+                    <input type="button" value="Calcular" name="btncalc" id="btncalc" onclick="calcular()">
+                    </form>
                 </div>               
                 
                 <div id="msg">
-                    
+                    Calculando soma dos valores...
                 </div>
 
             </div>

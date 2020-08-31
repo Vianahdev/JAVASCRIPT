@@ -36,7 +36,7 @@ section{
     text-align: center;
 }
 
-#conteudo{
+#conteudo, #msg{
     margin: 0px;  
     padding: 5px;
 }
@@ -47,6 +47,10 @@ section{
 
 #resultado{
     padding: 5px;
+}
+
+#radio {
+    display: inline;
 }
 
 label,input{
