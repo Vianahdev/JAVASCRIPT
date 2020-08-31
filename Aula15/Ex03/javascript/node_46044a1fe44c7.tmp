@@ -1,0 +1,47 @@
+/*function calcula() {
+    var data = new Date()
+    var anoatual = data.getFullYear()
+
+    var txtano = document.querySelector('input#txtent')
+    var txtsal = document.querySelector('input#txtsal')
+
+    if (txtano.value.length == 0 || txtsal.value.length == 0) {
+        window.alert('[ERRO] Preencha os campos para realizar o calculo!')
+    }else{
+        var ano = Number(txtano.value)
+        var sal = Number(txtsal.value)
+
+        var percent = 0.015
+
+        if (ano < 2011) {
+            var salfim = sal * percent + sal
+            console.log(salfim)
+        }else{
+            for (var calc = ano; calc <= anoatual; percent++) {
+                var salfim = sal * percent + sal
+                console.log(`${salfim}`)
+                
+            }
+        }
+    
+    }  
+}
+
+    
+*/
+
+var data = new Date()
+var anoatual = data.getFullYear()
+
+var ano = 2011
+
+var percent = 0.015
+
+    for (var calc = ano; calc <= anoatual; calc++) {
+        for (var percent = 0.015; calc <= anoatual; percent++) {
+            console.log(`${percent}`)   
+        }
+        var salfim = sal * percent + sal
+        console.log(`${salfim}`)   
+    }
+

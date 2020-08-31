@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" href="css/style.css">
-        <title>Ex01 | Curso em Video</title>
+        <title>Ex03 | Curso em Video</title>
     </head>
     <body>
 
@@ -20,9 +20,19 @@
         <section>
             <div class="caixa">
                 <div id="conteudo">
+                    <label for="txtent">Digite o ano de Entrada:</label>
+                    <input type="number" name="txtent" id="txtent">
+                    <label for="txtsal">Digite o salario Inicial</label>
+                    <input type="number" name="txtsal" id="txtsal">
+
+                    <input type="button" value="Calcular" name="btncalc" id="btncalc" onclick="calcula()">
                     
                 </div>               
-   
+                
+                <div id="msg">
+                    Calculando Salario...
+                </div>
+
             </div>
         </section>
 
