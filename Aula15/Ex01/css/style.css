@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgb(36, 101, 187);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header{
+    
+    text-align: center;
+    color: white;
+    line-height: 100px;
+}
+
+section{
+    margin-top: 5px;
+}
+
+.caixa{
+   
+    width: 350px;
+    height: 450px;
+    margin: 0px auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.329);
+}
+
+#rodape{
+    
+    margin-top: 5px;
+    line-height: 50px;
+    color: white;
+    text-align: center;
+}
