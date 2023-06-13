@@ -1,0 +1,49 @@
+body{
+    background-color: rgb(68, 125, 199);
+    color: white;
+    font: normal 18px Arial ;
+}
+
+
+h1.title{
+    margin-top: 70px;
+}
+
+div.box{
+    width: 200px;
+    height: 200px;
+
+    line-height: 200px;
+    text-align: center;
+
+    color: white;
+    background-color: rgb(68, 199, 107);
+
+    position: relative;
+    top: 30px;
+    left: 30px;
+}
+
+input.text{
+    width: 100px;
+    height: 70px;
+    font-size: 45px;
+    margin-left: 5px;
+}
+
+input.button{
+    font-size: 29px;
+    font-weight: bold;
+    width: 108px;
+    height: 76px;
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 10px;
+}
+
+div#soma{
+    position: relative;
+}
+
+
