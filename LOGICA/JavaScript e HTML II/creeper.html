@@ -134,24 +134,28 @@
         bodyCreeper();
 
         function footerCreeperL(){
+            //Perna esqueda do creeper.
             let l_canva = document.querySelector('canvas#footerL');
             let l_pincel = l_canva.getContext('2d');
 
             l_pincel.fillStyle = 'Green';
             l_pincel.fillRect(0, 0, 202, 200);
 
+            //Pé esquerdo do creeper.
             l_pincel.fillStyle = 'Black';
             l_pincel.fillRect(0, 150, 202, 50);
         }
         footerCreeperL()
 
         function footerCreeperR(){
+            //Perna direita do creeper.
             let l_canva = document.querySelector('canvas#footerR');
             let l_pincel = l_canva.getContext('2d');
 
             l_pincel.fillStyle = 'Green';
             l_pincel.fillRect(0, 0, 202, 200);
 
+            //Pé direito do creeper.
             l_pincel.fillStyle = 'Black';
             l_pincel.fillRect(0, 150, 202, 50);
         }
