@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creeper</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .head_creeper{
+            width: 350px;
+            height: 300px;
+            margin: 0 auto;
+            margin-top: 5px;
+        }
+        
+        .body_creeper{
+            width: 300px;
+            height: 425px;
+            margin: 0 auto;
+            margin-top: 4px;
+        }   
+        
+        .footer_creeper{
+            width: 410px;
+            height: 200px;
+            margin: 0 auto;
+
+        }
+
+        canvas#head{
+            border: 2px solid black;
+        }
+        
+        canvas#body{
+            border-left: 2px;
+            border-bottom: 0px;
+            border-top: 0px;
+            border-right: 2px;
+            border-style: solid;
+            border-color:black;;
+        }
+
+        canvas#footerL{
+            float: left;
+            background-color: gray;
+            border-left: 2px;
+            border-bottom: 2px;
+            border-top: 2px;
+            border-right: 1px;
+            border-style: solid;
+            border-color:black;;
+        }
+        canvas#footerR{
+            float: right;
+            background-color: gray;
+            border-left: 1px;
+            border-bottom: 2px;
+            border-top: 2px;
+            border-right: 2px;
+            border-style: solid;
+            border-color:black;;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="head_creeper">
+        <canvas id="head" width="350" height="300"></canvas>
+    </div>
+
+    <div class="body_creeper">
+        <canvas id="body" width="300" height="425"></canvas>
+    </div>
+
+    <div class="footer_creeper">
+        <canvas id="footerL" width="202" height="200"></canvas>
+        <canvas id="footerR" width="202" height="200"></canvas>
+    </div>
+
+    <script>
+        
+        function headCreeper(){
+            //Cabeça do creeper.
+            let l_canva = document.querySelector('canvas#head');
+            let l_pincel = l_canva.getContext('2d');
+
+            l_pincel.fillStyle = 'Green';
+            l_pincel.fillRect(0, 0, 350, 300);
+
+            // Olhos do creeper.
+            l_pincel.fillStyle = 'Black';
+            l_pincel.fillRect(50,60, 90,90);
+            l_pincel.fillRect(210,60, 90, 90);
+
+            //Nariz do creeper.
+            l_pincel.fillStyle = 'Black';
+            l_pincel.fillRect(140,150, 70, 100);
+
+            //Boca do creeper.
+            l_pincel.fillStyle = 'Black';
+            l_pincel.fillRect(100, 200, 40,100);
+            l_pincel.fillRect(210, 200, 40,100);
+        }
+        headCreeper();
+
+        function bodyCreeper(){
+            //Corpo creeper
+            let l_canva = document.querySelector('canvas#body');
+            let l_pincel = l_canva.getContext('2d');
+
+            l_pincel.fillStyle = 'Green';
+            l_pincel.fillRect(0, 0, 300, 425);
+
+            //Pintas creeper
+            l_pincel.fillStyle = 'Lightgreen';
+            l_pincel.fillRect(50, 0, 50, 50);
+            l_pincel.fillRect(0, 100, 50, 50);
+            l_pincel.fillRect(0, 150, 50, 50);
+            l_pincel.fillRect(0, 200, 50, 50);
+
+            l_pincel.fillRect(100, 100, 50, 50);
+            l_pincel.fillRect(150, 150, 50, 50);
+            l_pincel.fillRect(200, 200, 50, 50);
+        }
+        bodyCreeper();
+
+        function footerCreeperL(){
+            let l_canva = document.querySelector('canvas#footerL');
+            let l_pincel = l_canva.getContext('2d');
+
+            l_pincel.fillStyle = 'Green';
+            l_pincel.fillRect(0, 0, 202, 200);
+
+            l_pincel.fillStyle = 'Black';
+            l_pincel.fillRect(0, 150, 202, 50);
+        }
+        footerCreeperL()
+
+        function footerCreeperR(){
+            let l_canva = document.querySelector('canvas#footerR');
+            let l_pincel = l_canva.getContext('2d');
+
+            l_pincel.fillStyle = 'Green';
+            l_pincel.fillRect(0, 0, 202, 200);
+
+            l_pincel.fillStyle = 'Black';
+            l_pincel.fillRect(0, 150, 202, 50);
+        }
+        footerCreeperR()
+    </script>
+    
+</body>
+</html>
