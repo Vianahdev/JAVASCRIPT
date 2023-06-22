@@ -6,6 +6,16 @@
         <title>Jogo tiro ao Alvo</title>
     </head>
     <body>
+        <canvas id="painel" width="600" height="400"></canvas>
+        <script>
+
+            let l_painel = document.querySelector('canvas#painel');
+            let l_pincel = l_painel.getContext('2d');
+
+            l_pincel.fillStyle = 'Lightgray';
+            l_pincel.fillRect(0,0,600,400)
+
+        </script>
         
     </body>
 </html>
