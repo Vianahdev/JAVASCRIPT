@@ -26,9 +26,7 @@ function soltando(){
 }
 
 
-
 // COLETANDO DADOS DO USUARIO - INPUT//
-
 
 function somar(){
     
