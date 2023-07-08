@@ -11,9 +11,9 @@ function binarySearch(array, item, begin, end){
 
         if(array[indice] > item){
             return binarySearch(array, item, begin, indice-1);
+            
         }
-
-        return binarySearch(array, item, indice+1, end);
+        return binarySearch(array, item, indice+1, end);  
     }
     return -1;
 }
