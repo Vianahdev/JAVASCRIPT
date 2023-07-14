@@ -21,6 +21,8 @@ function listUsers(){
   return document.write(users);
 }
 
-insertUsers('José').then(listUsers).catch((error)=>{
+insertUsers('José')
+    .then(listUsers)
+    .catch((error)=>{
     document.write(error.msg)
 });
