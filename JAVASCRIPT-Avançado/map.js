@@ -14,5 +14,29 @@ function insertAluno(name, age){
     return aluno.name + " tem " + aluno.age + " anos" + '<br>';
   }
   
-  document.write(alunos.map(nameAge))
+  document.write(alunos.map(nameAge));
+
+
+  /*VALOR E REFERENCIA*/
+
+  let turmaA = [
+    insertAluno('Matheus', 24),
+    insertAluno('Gabriel', 17),
+    insertAluno('Paulo', 24),
+    insertAluno('Mariana', 27),
+    insertAluno('Ana', 13)
+  ]
+
+/*
+  let turmaB = turmaA.slice();
+
+  turmaB.push(insertAluno("Igor", 35));
+*/
+
+  let turmaB = Object.assign({}, turmaA);
+
+  turmaB.push(insertAluno("Igor", 35));
+
+  
+
   
