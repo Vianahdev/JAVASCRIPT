@@ -11,8 +11,8 @@ let contato = {
   telephone: '+5511998765432'
 }
 
-let cliente = {...pessoa, ...contato};
-cliente.telephone = '+551123456789';
+let cliente = {...pessoa, ...contato} //<-- SPREAD OPERATOR
+cliente.telephone = '+551123456789'
 
 console.log(cliente);
 
@@ -65,8 +65,8 @@ let turmaB = [
   },
 ]
 
-let turmaPrincipal = [...turmaA, ...turmaB]
-turmaPrincipal.push({ name: "Igor", age: 33, nota1: 10, nota2: 9});
+let turmaPrincipal = [...turmaA, ...turmaB] //<-- SPREAD OPERATOR
+turmaPrincipal.push({ name: "Igor", age: 33, nota1: 10, nota2: 9})
 
 
 console.log(turmaPrincipal)
