@@ -4,7 +4,7 @@ addEventListener('keyup', ()=>{
   //Limpa o Campo Digitado
   document.querySelector('input#txtValor').value = '';
 
-  l_keypress.trim()
+  l_keypress.trim();
 
   if (
     l_keypress == 0 ||
@@ -22,6 +22,6 @@ addEventListener('keyup', ()=>{
     document.querySelector('input#txtNumber').value += l_keypress;
   } else {
     //Adicionado o caracter no campo referente a Letra
-    document.querySelector("input#txtLetras").value += l_keypress
+    document.querySelector('input#txtLetras').value += l_keypress;
   }
 });
