@@ -5,6 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>JAVASCRIPT - Dom</title>
+
+  <style>
+    div{
+      width: 250px;
+      height: 250px;
+      margin: 15px;
+    }
+
+    .style1{
+      background: grey;
+    }
+
+    .style2{
+      background: red;
+    }
+  </style>
 </head>
 <body>
 
@@ -20,20 +36,27 @@
     <input type="text" id="txtNumber" placeholder="0" disabled>
   -->
 
+  <!--MANIPULANDO ESTILOS
+    <h1>Manipulando estilo</h1>
+    <hr>
 
-  <!--MANIPULANDO ESTILOS-->
-  <h1>Manipulando estilo</h1>
-  <hr>
+    <button onclick="validaEstilo('Red', '200px', '200px')">Vermelho</button>
+    <button onclick="validaEstilo('Green', '250px', '250px')">Verde</button>
+    <button onclick="validaEstilo('Blue', '300px', '300px')">Azul</button>
 
-  <button onclick="validaEstilo('Red', '200px', '200px')">Vermelho</button>
-  <button onclick="validaEstilo('Green', '250px', '250px')">Verde</button>
-  <button onclick="validaEstilo('Blue', '300px', '300px')">Azul</button>
+    <div id="area" style="width: 150px; height: 150px; border-radius: 50%; margin-top: 15px;" ></div>
+  -->
 
-  <div id="area" style="width: 150px; height: 150px; border-radius: 50%; margin-top: 15px;" ></div>
+  <!--MANIPULANDO CLASSES-->
+    <h1>Manipulando Classes</h1>
+    <hr>
 
+    <div id="Painel" class="style1"></div>
 
+    <button id="btnTrocar">TROCAR</button>
 
   <!--<script src="manipulating_values.js"></script>-->
-  <script src="style_elements.js"></script>
+  <!--<script src="style_elements.js"></script>-->
+  <script src="manipulating_class.js"></script>
 </body>
 </html>
