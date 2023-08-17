@@ -39,7 +39,7 @@ Para criação de um `Array` em Javascript e declarar uma variável que receba u
 
   Podemos utilizar `"[ ]"` para atribuição de um `Array` o Javascript irá entender que isso e uma variavel do tipo `Array`.
 
-<br><br>
+<br>
 
 # ARRAY (LENGTH)
 A função `Length` e utilizada para verificar o tamanho do `Array`, porém ao utilizar a função `Length` e necessario analisar como o `Array` foi declarado, pois pode ocorrer problema na contagem dos elementos dentro do proprio `Array`.
@@ -51,7 +51,7 @@ A função `Length` e utilizada para verificar o tamanho do `Array`, porém ao u
   console.log(l_listFrutas.length);
   ```
 
-<br><br>
+<br>
 
 # ARRAY (MULTIDIMENSIONAL / BIDIMENSIONAL)
 O que são `Array Multidimensional` ou `Array Bidimensional`?
@@ -68,8 +68,7 @@ Estes tipos de `Array` são simplemente um `Array` dentro de outro `Array`.
   console.log(l_listCoisas);
   ```
 
-
-<br><br>
+<br>
 
 # ARRAY (FUNÇÃO DE INCLUSÃO E EXCLUSÃO)
 
@@ -111,3 +110,19 @@ Estes tipos de `Array` são simplemente um `Array` dentro de outro `Array`.
 
   console.log(l_listFrutas);
   ```
+
+  <br>
+
+# ARRAY (MÉTODO DE PESQUISA)
+
+Para podermos identificar a posição de um elemento dentro de um `Array` utilizamos a função `indexOf`.
+
+* **Exemplo**
+  ```js
+  let l_listFrutas = ['Banana', 'Maçã', 'Morango', 'Uva'];
+
+  console.log(l_listFrutas.indexOf('Morango'));
+  ```
+
+Caso realize uma pesquisa de um elemento que não existe dentro do `Array` o Javascript irá retornar um valor negativo `"-1"`.
+
