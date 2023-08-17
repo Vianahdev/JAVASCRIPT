@@ -75,11 +75,39 @@ Estes tipos de `Array` são simplemente um `Array` dentro de outro `Array`.
 
 ### INCLUSÃO DE ELEMENTOS
 * A função `Push()` e utilizada para inclusão de um novo elemento no final de um Array.
+  ```js
+  let l_listFrutas = ['Abacate', 'Maçã', 'Morango', 'Uva'];
+
+  l_listFrutas.push('Laranja');
+
+  console.log(l_listFrutas);
+  ```
 
 * A função `Unshift()` e utilizada para inclusão de um novo elemento no inicio de um Array.
+  ```js
+  let l_listFrutas = ['Abacate', 'Maçã', 'Morango', 'Uva'];
+
+  l_listFrutas.unshift('Laranja');
+
+  console.log(l_listFrutas);
+  ```
 
 ### EXCLUSÃO DE ELEMENTOS
 
 * A função `Pop()` e utilizada para exclusão de um elemento no final de um Array.
+  ```js
+  let l_listFrutas = ['Abacate', 'Maçã', 'Morango', 'Uva', 'Laranja'];
+
+  l_listFrutas.pop('Laranja');
+
+  console.log(l_listFrutas);
+  ```
 
 * A função `Shift()` e utilizada para exclusão de um elemento no inicio de um Array.
+  ```js
+  let l_listFrutas = ['Abacate', 'Maçã', 'Morango', 'Uva', 'Laranja'];
+
+  l_listFrutas.shift('Abacate');
+
+  console.log(l_listFrutas);
+  ```
