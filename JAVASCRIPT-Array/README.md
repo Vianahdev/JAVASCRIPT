@@ -1,8 +1,8 @@
 # ARRAY
 
-Um Array são listas ordenadas, são variáveis que permitem relacionar itens a índex (chaves). Uma variável do tipo array podemos associar as posições (index) a seu elemento.
+Um `Array` são listas ordenadas, são variáveis que permitem relacionar itens a índex (chaves). Uma variável do tipo `Array` podemos associar as posições (index) a seu elemento.
 
-Para criação de um `Array` em Javascript e declarar uma variável que receba um objeto do tipo Array.
+Para criação de um `Array` em Javascript e declarar uma variável que receba um objeto do tipo `Array`.
 
 * **Exemplo 1**
 
@@ -17,7 +17,7 @@ Para criação de um `Array` em Javascript e declarar uma variável que receba u
   console.log(l_listFrutas[1]);
   ```
 
-  **Obs. Um Array pode receber qualquer tipo de dados (String, Bolean e Number).**
+  Um `Array` pode receber qualquer tipo de dados (String, Bolean e Number).
 
 * **Exemplo 2**
 
