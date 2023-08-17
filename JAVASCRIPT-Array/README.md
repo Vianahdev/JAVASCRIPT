@@ -41,6 +41,36 @@ Para criação de um `Array` em Javascript e declarar uma variável que receba u
 
 <br><br>
 
+# ARRAY (LENGTH)
+A função `Length` e utilizada para verificar o tamanho do `Array`, porém ao utilizar a função `Length` e necessario analisar como o `Array` foi declarado, pois pode ocorrer problema na contagem dos elementos dentro do proprio `Array`.
+
+* **Exemplo**
+  ```js
+  let l_listFrutas = ['Abacate', 'Maçã', 'Morango', 'Uva'];
+
+  console.log(l_listFrutas.length);
+  ```
+
+<br><br>
+
+# ARRAY (MULTIDIMENSIONAL / BIDIMENSIONAL)
+O que são `Array Multidimensional` ou `Array Bidimensional`?
+
+Estes tipos de `Array` são simplemente um `Array` dentro de outro `Array`.
+
+* **Exemplo**
+  ```js
+  let l_listCoisas = [];
+
+  l_listCoisas['Frutas'] = ['Abacate', 'Maçã', 'Morango', 'Uva'];
+  l_listCoisas['Pessoas'] = ['Matheus', 'Gabriel', 'João', 'José'];
+
+  console.log(l_listCoisas);
+  ```
+
+
+<br><br>
+
 # ARRAY (FUNÇÃO DE INCLUSÃO E EXCLUSÃO)
 
 ### INCLUSÃO DE ELEMENTOS
