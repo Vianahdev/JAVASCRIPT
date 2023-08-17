@@ -111,10 +111,9 @@ Estes tipos de `Array` são simplemente um `Array` dentro de outro `Array`.
   console.log(l_listFrutas);
   ```
 
-  <br>
+<br>
 
 # ARRAY (MÉTODO DE PESQUISA)
-
 Para podermos identificar a posição de um elemento dentro de um `Array` utilizamos a função `indexOf`.
 
 * **Exemplo**
@@ -126,3 +125,27 @@ Para podermos identificar a posição de um elemento dentro de um `Array` utiliz
 
 Caso realize uma pesquisa de um elemento que não existe dentro do `Array` o Javascript irá retornar um valor negativo `"-1"`.
 
+<br>
+
+# ARRAY (ORDENAÇÃO)
+Podemos utilizar o método `Sort()` para realizarmos uma ordenção em um `Array` para tipo alfanumericos.
+
+* **Exemplo**
+  ```js
+  let l_listFrutas = ['Uva', 'Maçã', 'Banana', 'Morango'];
+
+  console.log(l_listFrutas.sort());
+  ```
+
+Para realizarmos uma ordenação de um `Array` para tipo numericos, iremos utilziar uma função de `Callback`, pois sera necessario executar a função de acordo com o método `sort()`.
+
+* **Exemplo**
+  ```js
+  let l_listNumber = [30,4,3,65,32,0,1];
+
+  function order(a, b){
+    return a - b;
+  }
+
+  console.log(l_listNumber.sort(order));
+  ```
