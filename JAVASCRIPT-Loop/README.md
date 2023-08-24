@@ -67,3 +67,19 @@ A instrução `for` cria um loop que consiste em três expressões opcionais, de
     document.write(l_array[x] + '<br/>');
   }
 ```  
+<br>
+
+# FOR IN / FOREACH
+
+### FOR IN
+A instrução `For in` e uma união do laço `for` com o operador `in`.
+
+```js
+  let l_listConvidados = ['Jorge', 'Matheus' , 'Roberto', 'Mauricio', 'Gabriel', 'Maria', 'Ana'];
+
+  console.log(l_listConvidados);
+
+  for( let x in l_listConvidados){
+    console.log('Índice ' + x + ' valor ' + l_listConvidados[x]);
+}
+```
