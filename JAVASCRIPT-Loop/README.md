@@ -44,3 +44,26 @@ A instrução `do while` cria um loop que executa uma instrução especificada a
     document.write(x + '<br/>');
   }while(x <= 10);
 ```
+
+<br>
+
+### FOR
+
+A instrução `for` cria um loop que consiste em três expressões opcionais, dentro de parênteses e separadas por ponto e vírgula, seguidas por uma declaração ou uma sequência de declarações executadas em sequência.
+
+```js
+  for(let x = 0; x <= 10; x++){
+    document.write(x+'<br/>');
+  }
+```
+<br>
+
+# UTILIZANDO LOOP EM ARRAY
+
+```js
+  let l_array = ['Banana', 'Morango', 'Uva', 'Manga', 'Maçã', 'Laranja'];
+
+  for(let x = 0; x <= l_array.length;x++){
+    document.write(l_array[x] + '<br/>');
+  }
+```  
