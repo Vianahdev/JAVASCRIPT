@@ -31,3 +31,16 @@ A declaração `while` cria um laço que executa uma rotina especifica enquanto 
     x++;
   }
   ```
+<br>
+
+### DO WHILE
+
+A instrução `do while` cria um loop que executa uma instrução especificada até que a condição de teste seja avaliada como falsa. A condição é avaliada após a execução da instrução, resultando na execução da instrução especificada pelo menos uma vez.
+
+```js
+  let x = 11;
+
+  do{
+    document.write(x + '<br/>');
+  }while(x <= 10);
+```
